@@ -1,0 +1,17 @@
+
+open a two terminal on pi :
+
+Here,
+	-h=hostname   :your ip address
+	-u=username   :normally username :"username"
+	-p=password   :shibly
+	-t=topic_name :esp/test   publish and subscribe both topic name will be same
+
+
+
+1st terminal:
+mosquitto_sub -d -u username -P shibly -t "ESP8266Client"
+
+2nd Terminal:
+mosquitto_pub -h 10.100.93.225 -u username -P shibly -t esp/test -m "shibly!"
+
